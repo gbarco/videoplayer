@@ -1,8 +1,10 @@
 #!/bin/bash
 cd /root/videoplayer
 
-if [ -f "$1" ]; then
-	qiv -fi "$1"
+IMG="media/background.png"
+
+if [ -f "$IMG" ]; then
+	qiv -fi "$IMG"
 else
-	echo "$1 not found!"
+	echo "$IMG not found!"
 fi
